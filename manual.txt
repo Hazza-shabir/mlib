@@ -1,0 +1,104 @@
+This library is created by Hazza shabir
+structure of manual
+
+namespaces {
+	
+	classes {
+		
+		variables
+		
+		methods
+		
+	}
+	
+	functions(parameters type) -> return type
+	
+}
+
+structure ended
+
+
+
+
+
+vector {
+	
+	vector2 {
+		
+		float x
+		float y
+		
+		~conctructer(float, float)
+		
+	}
+	vector3 {
+		
+		float x
+		float y
+		float z
+		
+		~conctructer(float, float, float)
+		
+	}
+	
+	addVector(vector2 or vector3, vector2 or vector3) -> vector2 or vector3
+	diffVector(vector2 or vector3, vector2 or vector3) -> vector2 or vector3
+	scalProdVec(float, vector2 or vector3) -> vector2 or vector3
+	ProdVec(vector2 or vector3, vector2 or vector3) -> vector2 or vector3
+	
+}
+
+matrix {
+	
+	matrix2by2 {
+		
+		float a11
+		float a12
+		float a21
+		float a22
+		
+		~conctructer(float, float, float, float)
+		setValue(float, float, float, float) -> void
+		setValueOf(string, float) -> void
+		getValueOf(string) -> float
+	}
+	matrix3by3 {
+		
+		float a11
+		float a12
+		float a13
+		float a21
+		float a22
+		float a23
+		float a31
+		float a32
+		float a33
+		
+		~conctructer(float, float, float, float, float, float, float, float, float)
+		setValue(float, float, float, float, float, float, float, float, float) -> void
+		setValueOf(string, float) -> void
+		getValueOf(string) -> float
+	}
+	
+	FindDeterminent(matrix2by2 or matrix3by3) -> float
+	scalProdMat(float, matrix2by2 or matrix3by3) -> matrix2by2 or matrix3by3
+	addMatrix(matrix2by2 or matrix3by3, matrix2by2 or matrix3by3) -> matrix2by2 or matrix3by3
+	diffMatrix(matrix2by2 or matrix3by3, matrix2by2 or matrix3by3) -> matrix2by2 or matrix3by3
+	ProdMat(matrix2by2 or matrix3by3, matrix2by2 or matrix3by3) -> matrix2by2 or matrix3by3
+}
+
+mathf {
+	
+	have no class
+	
+	powerOf(float, int) -> float
+	areaOfCircle(float) -> float
+	areaOfRectangle(float, float) -> float
+	parameterOfRectangle(float, float) -> float
+	areaOfTriangle(float, float) -> float
+	parameterOfSquare(float) -> float
+	parameterOfTriangle(float, float, float) -> float
+	isEven(int) -> bool
+	absolute(float) -> float
+	
+}
